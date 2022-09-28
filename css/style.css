@@ -72,6 +72,7 @@ main {
 .card {
     max-width: 32%;
     margin-bottom: 2rem;
+    position: relative;
 }
 
 .img-container img {
@@ -80,6 +81,18 @@ main {
 
 .img-container {
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.img-hover {
+    position: absolute;
+    visibility: hidden;
+}
+
+.card:hover .img-hover {
+    visibility: visible;
 }
 
 .heart {
@@ -89,6 +102,10 @@ main {
     right: 0%;
     top: 10px;
     font-size: 2rem;
+}
+
+.heart:hover {
+    color: red;
 }
 
 .pros {
